@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logistic Regression in Machine Learning</title>
+    <!-- Add Bootstrap CSS link here -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/5.3.1/css/bootstrap.min.css">
+    <!-- Add custom CSS if needed -->
+    <style>
+        /* Add custom CSS styles here */
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    {%include 'navbar.html'%}
+
+    <div class="container mt-5 mb-3">
+        <h1 class="text-center">Logistic Regression in Machine Learning</h1>
+        <div class="row mt-4">
+            <div class="col-md-5">
+                <!-- Embed the photo here -->
+                <img src="\static\lor.png" alt="Logistic Regression" class="img-fluid">
+            </div>
+            <div class="col-md-1"></div>
+            <div class="col-md-6">
+                <!-- Add explanation of logistic regression here -->
+                <p>
+                    Logistic Regression is a fundamental algorithm in machine learning used for binary classification tasks.
+                    It models the probability of a binary outcome (e.g., yes/no, 1/0) as a linear combination of features,
+                    and then applies a logistic function to this combination to obtain probabilities between 0 and 1.
+                </p>
+                <!-- Display accuracy score in a card -->
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Accuracy Score</h5>
+                        <p class="card-text">The accuracy score of our logistic regression model is {{accuracy_score}}.</p>
+                    </div>
+                </div>
+                <p>
+                    While grid search can be used to optimize hyperparameters for many machine learning algorithms, the hyperparameters in logistic regression may not be particularly insightful. Instead, we can use logistic regression to identify feature importance, as the coefficients learned during training can reveal which features are most strongly associated with the target variable. We can obtain the coefficients.
+                </p>
+
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Best Parameters</h5>
+                        <p class="card-text">Best parameters are : {{bp}}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JavaScript and jQuery scripts -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/5.3.1/js/bootstrap.min.js"></script>
+</body>
+</html>

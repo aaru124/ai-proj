@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Correlation HeatMap</title>
+    <style>
+        /* Set a fixed height for the card body and enable overflow */
+        .scrollable-card {
+            margin-left: 15%;
+            max-height: 500px;
+            overflow-y: auto;
+        }
+    </style>
+</head>
+<body>
+    {% include 'navbar.html' %}
+   
+    <div class="card mt-4">
+        <div class="card-title">
+            <h1 style="text-align: center;"> Correlation Heatmap</h1>
+        </div>
+        <div class="card-body scrollable-card" style="align-items: center;">
+            <img src="data:image/png;base64,{{ plot_url }}" alt="Embedded Plot">
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neural Networks in Deep Learning</title>
+    <!-- Add Bootstrap CSS link here -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/5.3.1/css/bootstrap.min.css">
+    <!-- Add custom CSS if needed -->
+    <style>
+        /* Add custom CSS styles here */
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    {% include 'navbar.html' %}
+    <div class="container mt-5">
+        <h1 class="text-center mb-3">Neural Networks in Deep Learning</h1>
+        <div class="row mt-4">
+            <div class="col-md-5">
+                <!-- Embed the first photo here -->
+                <img src="data:image/png;base64,{{ url }}" alt=" Confusion Matrix" height="300px" width="600px">
+            
+                
+            </div>
+
+            <div class="col-md-1"></div>
+
+            <div class="col-md-6">
+                <!-- Add explanation of neural networks here -->
+                <p>
+                    Neural networks are a class of machine learning algorithms inspired by the structure and function of the human brain.
+                    They consist of layers of interconnected neurons that process and learn from data to make predictions.
+                </p>
+            
+                <!-- Display accuracy score in a card -->
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Accuracy Score</h5>
+                        <p class="card-text">The accuracy score of our neural network model is {{acc}}.</p>
+                    </div>
+                </div>
+                <p>
+                    This model includes an input layer with 64 neurons, a hidden layer with 40 neurons, and an output layer with a single neuron (binary classification).
+                    We compile the model using adam optimizer and 100 epochs of batch size 32.
+                </p>
+            </div>
+        </div>
+        <div class="col-md-12">
+            <img src="static\nnp.png" alt="Neural Network 2" class="img-fluid">
+        </div>
+
+    </div>
+
+    <!-- Bootstrap JavaScript and jQuery scripts -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/5.3.1/js/bootstrap.min.js"></script>
+</body>
+</html>

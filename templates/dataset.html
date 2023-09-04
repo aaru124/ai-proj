@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parkinson's Detection Dataset</title>
+    
+    <!-- Add Bootstrap CSS link -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    
+    <!-- Add custom CSS if needed -->
+    <style>
+        /* Set a fixed height for the card body and enable overflow */
+        .scrollable-card {
+            max-height: 500px; /* Adjust the desired height */
+            overflow-y: auto;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Navigation Bar -->
+{% include 'navbar.html'%}
+
+<!-- Dataset Section -->
+<section id="dataset" class="container mt-5">
+    <h1>Parkinson's Detection Dataset</h1>
+    
+    <!-- Dataset Description -->
+    <div class="card mb-4 mt-4" >
+        <div class="card-body">
+            <h2 class="card-title">About the Dataset</h2>
+            <p class="card-text">
+                This dataset is composed of a range of biomedical voice measurements from 31 people, 23 with Parkinson's disease (PD). It includes voice attributes Information that can be used for detecting parkinson.
+                The analysis of voice disorders can provide valuable information in diagnosing and monitoring Parkinson's disease.
+            </p>
+        </div>
+    </div>
+
+    <!-- Dataset Features -->
+    <div class="card mb-4">
+        <div class="card-body">
+            <h2 class="card-title">Features</h2>
+            <br>
+            <ul>
+                <li>name - ASCII subject name and recording number</li>
+                <li>MDVP:Fo(Hz) - Average vocal fundamental frequency</li>
+                <li>MDVP:Fhi(Hz) - Maximum vocal fundamental frequency</li>
+                <li>MDVP:Flo(Hz) - Minimum vocal fundamental frequency</li>
+                <br>Five measures of variation in Frequency:
+                <li>MDVP:Jitter(%) - Percentage of cycle-to-cycle variability of the period duration</li>
+                <li>MDVP:Jitter(Abs) - Absolute value of cycle-to-cycle variability of the period duration</li>
+                <li>MDVP:RAP - Relative measure of the pitch disturbance</li>
+                <li>MDVP:PPQ - Pitch perturbation quotient</li>
+                <li>Jitter:DDP - Average absolute difference of differences between jitter cycles</li>
+                <br>Six measures of variation in amplitude
+                <li>MDVP:Shimmer - Variations in the voice amplitdue</li>
+                <li>MDVP:Shimmer(dB) - Variations in the voice amplitdue in dB</li>
+                <li>Shimmer:APQ3 - Three point amplitude perturbation quotient measured against the average of the three amplitude</li>
+                <li>Shimmer:APQ5 - Five point amplitude perturbation quotient measured against the average of the three amplitude</li>
+                <li>MDVP:APQ - Amplitude perturbation quotient from MDVP</li>
+                <li>Shimmer:DDA - Average absolute difference between the amplitudes of consecutive periods</li>
+                <br>Two measures of ratio of noise to tonal components in the voice
+                <li>NHR - Noise-to-harmonics Ratio</li>
+                <li>HNR - Harmonics-to-noise Ratio</li>
+                <br>
+                <li>status - Health status of the subject (one) - Parkinson's, (zero) - healthy</li>
+                <br>Two nonlinear dynamical complexity measures
+                <li>RPDE - Recurrence period density entropy</li>
+                <li>D2 - correlation dimension</li>
+                <br>
+                <li>DFA - Signal fractal scaling exponent</li>
+                <br>Three nonlinear measures of fundamental frequency variation
+                <li>spread1 - discrete probability distribution of occurrence of relative semitone variations</li>
+                <li>spread2 - Three nonlinear measures of fundamental frequency variation</li>
+                <li>PPE - Entropy of the discrete probability distribution of occurrence of relative semitone variations</li>
+                
+            </ul>
+        </div>
+    </div>
+
+    <!-- Dataset Sample -->
+    <div class="card scrollable-card">
+        <div class="card-body">
+            <h2 class="card-title">Sample Data</h2>
+            <p class="card-text mt-4">
+                <img src="static\d.png">
+            </p>
+        </div>
+    </div>
+</section>
+
+<!-- Add Bootstrap JS and Popper.js if needed -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@2.10.2/dist/umd/popper.min.js"></script>
+
+</body>
+</html>

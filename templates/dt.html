@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decision Tree Explanation</title>
+    <!-- Add Bootstrap CSS link here -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/5.3.1/css/bootstrap.min.css">
+    <!-- Add custom CSS if needed -->
+    <style>
+        /* Add custom CSS styles here */
+    </style>
+</head>
+<body>
+    {% include 'navbar.html'%}
+    <!-- Navigation Bar -->
+    
+    <div class="container mt-5">
+        <h1 class="text-center">Decision Tree</h1>
+        <div class="row mt-4">
+            <div class="col-md-6">
+                <p>
+                    A decision tree is a supervised machine learning algorithm used for both classification and regression tasks.
+                    It works by recursively splitting the dataset into subsets based on the most significant attribute at each node.
+                    This process continues until a stopping criterion is met, resulting in leaf nodes representing the final predictions.
+                </p>
+                <p>
+                    Decision trees are interpretable and can be visualized as a tree structure, making it easy to understand how
+                    the algorithm makes decisions. Each internal node represents a decision or test on a feature, and each leaf
+                    node represents a class label or a numeric value.
+                </p>
+                <p>
+                    Decision trees are a fundamental part of many machine learning algorithms, and they are used in various
+                    domains such as finance, healthcare, and natural language processing.
+                </p>
+            </div>
+            <div class="col-md-6">
+               
+                <img src="static\dt.png" alt="Decision Tree" class="img-fluid">
+                <p>Decision tree for the Parkinson's dataset</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JavaScript and jQuery scripts -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/5.3.1/js/bootstrap.min.js"></script>
+</body>
+</html>
